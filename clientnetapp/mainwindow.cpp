@@ -133,7 +133,7 @@ void MainWindow::startVoiceTransmission()
         return;
     }
     audioSource = new QAudioSource(inputDev, format, this);
-    inputDevice = audioSource->start();  // Запускаем запись
+    inputDevice = audioSource->start();
 
     connect(inputDevice, &QIODevice::readyRead, this, [this]() {
         QByteArray data = inputDevice->readAll();

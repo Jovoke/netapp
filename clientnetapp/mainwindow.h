@@ -42,7 +42,7 @@ private:
     quint16 blockSize;
     bool waitingForAuthResponse;
 
-    QAudioSource *audioSource = nullptr;  // Было QAudioInput
-    QAudioSink *audioSink = nullptr;      // Было QAudioOutput
+    QAudioSource *audioSource = nullptr; 
+    QAudioSink *audioSink = nullptr;      
     QIODevice *inputDevice = nullptr;
 };
